@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        font-family: Vazirmatn;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #f0f7f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        direction: rtl;
+        width: 100%;
+	background-image: url("background.jpg");
+	background-size: cover;
+      }
+
+      h1 {
+        color: #3c493f;
+        text-shadow: 2px 2px #b3bfb8;
+        margin: auto;
+        margin-bottom: 10px;
+        max-width: 100%;
+      }
+
+      .login-box {
+        background-color: #b3bfb8;
+        border: 2px solid #a2e3c4;
+        padding: 20px;
+        border-radius: 10px;
+        width: 555px;
+        margin: auto;
+        max-width: 100%;
+      }
+      .group {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        border: 2px solid #a2e3c4;
+        border-radius: 15px;
+        margin: 10px 0;
+        padding: 7px;
+      }
+
+      label {
+        white-space: nowrap;
+        color: #3c493f;
+      }
+
+      input {
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+      }
+      input::placeholder {
+        color: #7e8d85;
+      }
+
+      button {
+        background-color: #3c493f;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #313a33;
+      }
+
+      a {
+        font-size: 12px;
+        color: #a2e3c4;
+        padding-right: 10px;
+      }
+
+      @media screen and (max-width: 900px) {
+        .login-box {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="login-box">
+      <h1>ورود به حساب کاربری</h1>
+      <form>
+        <div class="group">
+          <label for="username">نام کاربری: </label>
+          <input type="text" id="username" name="username" placeholder="تنها شامل حروف انگلیسی" />
+        </div>
+
+        <div class="group">
+          <label for="password">گذرواژه: </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="حداقل 8 کاراکتر"
+            minlength="8"
+          />
+        </div>
+
+        <div class="buttons">
+          <button>ورود</button>
+          <a href="#">فراموشی گذرواژه</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
